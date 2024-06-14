@@ -1,0 +1,22 @@
+.portfolioListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.portfolioListItem > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.actions {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+

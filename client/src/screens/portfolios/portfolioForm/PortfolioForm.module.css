@@ -1,0 +1,43 @@
+/* PortfolioForm.module.css */
+
+.formContainer {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.avatarContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(47px, 1fr));
+    gap: 1px;
+    margin-bottom: 20px;
+}
+
+.avatarItem {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2px;
+    box-sizing: border-box;
+    flex: 1 0 23%; /* This will make sure that there are 4 items in a row */
+    transition: transform 0.3s ease;
+}
+
+.avatarItem:hover{
+    transform: scale(1.3);
+}
+
+.colorContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

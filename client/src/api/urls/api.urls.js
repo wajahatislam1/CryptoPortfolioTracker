@@ -1,0 +1,45 @@
+const BASE_URL = "http://localhost:4000";
+const API_URL = "/api/v1";
+
+//User API URLs
+const SIGNUP_URL = `${BASE_URL}${API_URL}/users/signup`;
+const SIGNIN_URL = `${BASE_URL}${API_URL}/users/signin/local`;
+const GOOGLE_AUTH_URL = `${BASE_URL}${API_URL}/users/signin/google/callback`;
+const TOKEN_VALID_URL = `${BASE_URL}${API_URL}/users/tokenvalid`;
+const SIGNOUT_URL = `${BASE_URL}${API_URL}/users/signout`;
+
+//Portfolios API URLs
+const PORTFOLIOS_URL = `${BASE_URL}${API_URL}/portfolio`;
+const ADD_PORTFOLIO_URL = PORTFOLIOS_URL;
+const UPDATE_PORTFOLIO_URL = PORTFOLIOS_URL;
+const DELETE_PORTFOLIO_URL = PORTFOLIOS_URL;
+const FETCH_PORTFOLIO_LIST_URL = PORTFOLIOS_URL;
+const GET_PORTFOLIO_COINS_STATS_URL = `${BASE_URL}${API_URL}/portfolio/coins/stats`;
+
+//Coin API URLs
+const FETCHCOINLIST_URL = `${BASE_URL}${API_URL}/coins`;
+
+//Transaction API URLs
+const ADD_TRANSACTION_URL = `${BASE_URL}${API_URL}/transactions`;
+const EDIT_TRANSACTION_URL = `${BASE_URL}${API_URL}/transactions`;
+const DELETE_TRANSACTION_URL = `${BASE_URL}${API_URL}/transactions`;
+const FETCH_TRANSACTION_LIST_URL = `${BASE_URL}${API_URL}/transactions/list`;
+
+export {
+  SIGNUP_URL,
+  SIGNIN_URL,
+  SIGNOUT_URL,
+  GOOGLE_AUTH_URL,
+  TOKEN_VALID_URL,
+  PORTFOLIOS_URL,
+  ADD_PORTFOLIO_URL,
+  UPDATE_PORTFOLIO_URL,
+  DELETE_PORTFOLIO_URL,
+  FETCH_PORTFOLIO_LIST_URL,
+  FETCHCOINLIST_URL,
+  ADD_TRANSACTION_URL,
+  EDIT_TRANSACTION_URL,
+  DELETE_TRANSACTION_URL,
+  FETCH_TRANSACTION_LIST_URL,
+  GET_PORTFOLIO_COINS_STATS_URL,
+};

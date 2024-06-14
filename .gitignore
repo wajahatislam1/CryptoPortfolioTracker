@@ -1,0 +1,7 @@
+### Ignore everything in server/node modules
+server/node_modules/*
+
+### Ignore everything in client/node modules
+client/node_modules/*
+### Ignore .env server file
+server/.env

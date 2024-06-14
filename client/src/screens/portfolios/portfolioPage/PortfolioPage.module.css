@@ -1,0 +1,24 @@
+.portfolioPage {
+    display: flex;
+    gap: 5px;
+  }
+
+
+  .portfolioPage > :first-child {
+    flex: 0.9;
+    padding: 1% 2% 1% 2%;
+  }
+
+  .portfolioPage > :last-child {
+    flex: 3.1;
+    /*Create shadow towards left side*/
+    box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    /*Specify different padding for each side*/
+    padding: 1% 2% 1% 2%;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Stack the children vertically */
+  }
+
+  .portfolioPage > :last-child > * {
+    flex-grow: 1; /* Make the children grow to fill the available space */
+  }
